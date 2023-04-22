@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+:root {
+  --pale-blue: hsl(243, 100%, 93%);
+  --graysh-blue: hsl(229, 7%, 55%);
+  --dark-blue: hsl(228, 56%, 26%);
+  --very-dark-blue: hsl(229, 57%, 11%);
+  --font-size: 14px;
+  --font-family: "Raleway", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: var(--font-size);
+}
+
+body {
+  font-family: var(--font-family);
+  background: var(--very-dark-blue);
+}
+
+main {
+  max-width: 102.8571rem;
+  height: 98vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  background-image: url("images/bg-desktop.png");
+  background-repeat: no-repeat;
+  background-position: center bottom 50px;
+  -webkit-background-size: auto;
+  -moz-background-size: auto;
+  -o-background-size: auto;
+  background-size: auto;
+}
+
+.wrapper {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  width: 65.5rem;
+}
+
+.box {
+  background: var(--dark-blue);
+}
+
+.left {
+  width: 38.2%;
+  height: 14.4286rem;
+  border-radius: 10px 100px 10px 10px;
+  padding: 2.8571rem;
+}
+
+.right {
+  width: 58.5%;
+  height: 11rem;
+  border-radius: 10px;
+  padding: 2.8571rem 2.7143rem;
+  position: relative;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  margin-top: 33px;
+}
+
+.icon {
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 10px;
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.message {
+  color: var(--pale-blue);
+  word-spacing: 0.5px;
+}
+
+.message span {
+  font-weight: 700;
+}
+
+.bar {
+  background-color: var(--very-dark-blue);
+  width: 100%;
+  height: 1.4286rem;
+  margin-top: 1.2857rem;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  padding: 0 3px;
+}
+
+.progress-bar {
+  background: rgb(255, 163, 153);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(255, 163, 153, 1) 35%,
+    rgba(255, 77, 151, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(255, 163, 153, 1) 35%,
+    rgba(255, 77, 151, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(255, 163, 153, 1) 35%,
+    rgba(255, 77, 151, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffa399",endColorstr="#ff4d97",GradientType=1);
+  width: 75%;
+  height: 1rem;
+  border-radius: 1.7857rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 0.1429rem;
+}
+
+.dot-bar {
+  background-color: var(--pale-blue);
+  height: 0.7143rem;
+  width: 0.7143rem;
+  border-radius: 50%;
+}
+
+.gb-indicators {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.6429rem;
+}
+
+.gb-indicators span {
+  font-size: 0.8929rem;
+  font-weight: 500;
+  color: var(--pale-blue);
+}
+
+.message-bobble {
+  position: absolute;
+  bottom: 7.7143rem;
+  right: 2.8571rem;
+  width: 12.7857rem;
+}
+
+.rectangle {
+  background-color: hsl(0, 0%, 100%);
+  height: 5.2143rem;
+  width: 100%;
+  border-radius: 10px 10px 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 16px;
+}
+
+.rectangle p {
+  font-size: 2.7857rem;
+  font-weight: 700;
+}
+
+.rectangle span {
+  text-transform: uppercase;
+  font-size: 0.8571rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: hsl(229, 7%, 55%);
+}
+
+.triangle {
+  clip-path: polygon(33% 0%, 100% 100%, 100% 0%);
+  height: 1.5rem;
+  width: 2.2143rem;
+  background-color: hsl(0, 0%, 100%);
+  border: 1px solid white;
+  float: right;
+}
+
+.attribution {
+  font-size: 0.7857rem;
+  text-align: center;
+  color: var(--pale-blue);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
